@@ -1,4 +1,6 @@
-let age: number = 20;
-// console.log(age)
-const date = new Date();
-console.log(`${date}`)
+function calculateTax(income: number, taxYear = 2022): number {
+    if (taxYear < 2022)
+      return income * 1.2;
+    return income * 1.3;
+}
+calculateTax(45_000, 2023);
